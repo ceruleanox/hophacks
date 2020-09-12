@@ -2,5 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CLIENT_ID</key>
+	<string>582581556221-knalo53640fo5rcik3pvvlk554pa1f81.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.582581556221-knalo53640fo5rcik3pvvlk554pa1f81</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAHLxXipxYRa5Y4HbgSyreGU4O4Uc88Y3k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>582581556221</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.friendlyeats</string>
+	<key>PROJECT_ID</key>
+	<string>friendlyeats-99a42</string>
+	<key>STORAGE_BUCKET</key>
+	<string>friendlyeats-99a42.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:582581556221:ios:9c72b7440254c7e1667f94</string>
+	<key>DATABASE_URL</key>
+	<string>https://friendlyeats-99a42.firebaseio.com</string>
 </dict>
 </plist>
