@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         leading: Icon(Icons.restaurant),
-        title: Text('FriendlyEats'),
+        title: Text('ChinaTown Eats'),
         bottom: PreferredSize(
           preferredSize: Size(320, 48),
           child: Padding(
