@@ -38,6 +38,7 @@ class _FilterSelectDialogState extends State<FilterSelectDialog> {
       _city = filter.city;
       _price = filter.price;
       _sort = filter.sort;
+      _open = filter.Open;
     }
   }
 
@@ -45,6 +46,7 @@ class _FilterSelectDialogState extends State<FilterSelectDialog> {
   String _city;
   int _price;
   String _sort;
+  String _open;
 
   Widget _buildDropdown<T>(
     List labels,
@@ -90,13 +92,36 @@ class _FilterSelectDialogState extends State<FilterSelectDialog> {
     FilterChangedCallback<String> onChanged,
   }) {
     return _buildDropdownRow<String>(
-      labels: ['Any Cuisine', ...hardcoded.categories],
+      labels: ['Must-Eats', ...hardcoded.categories],
       values: [null, ...hardcoded.categories],
       selected: selected,
       icon: Icons.fastfood,
       onChanged: onChanged,
     );
   }
+
+
+
+
+  Widget _buildOpenDropdown({
+    String selected,
+    FilterChangedCallback<String> onChanged,
+  }) {
+    return _buildDropdownRow<String>(
+      labels: ['Open/Closed', ...hardcoded.open],
+      values: [null, ...hardcoded.open],
+      selected: selected,
+      icon: Icons.local_cafe,
+      onChanged: onChanged,
+    );
+  }
+
+
+
+
+
+
+
 
   Widget _buildCityDropdown({
     String selected,
@@ -152,7 +177,7 @@ class _FilterSelectDialogState extends State<FilterSelectDialog> {
       ),
       content: Container(
         width: math.min(MediaQuery.of(context).size.width, 740),
-        height: math.min(MediaQuery.of(context).size.height, 200),
+        height: math.min(MediaQuery.of(context).size.height, 240),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -184,6 +209,14 @@ class _FilterSelectDialogState extends State<FilterSelectDialog> {
                     _sort = value;
                   });
                 }),
+            _buildOpenDropdown(
+                selected: _open,
+                onChanged: (String value) {
+                  setState(() {
+                    _open = value;
+                  });
+                }),
+            
           ],
         ),
       ),
@@ -201,6 +234,7 @@ class _FilterSelectDialogState extends State<FilterSelectDialog> {
                 city: _city,
                 price: _price,
                 sort: _sort,
+                Open: _open,
               )),
         ),
       ],

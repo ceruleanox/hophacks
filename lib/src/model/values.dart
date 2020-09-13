@@ -67,16 +67,19 @@ final cities = [
 
 final categories = [
   'Brunch',
-  'Burgers',
+  'Bubble Tea',
+  'Chinese BBQ',
   'Coffee',
-  'Deli',
   'Dim Sum',
+  'Dumplings',
+  'HotPot',
   'Indian',
-  'Italian',
   'Mediterranean',
   'Mexican',
   'Pizza',
+  'Poke Bowl',
   'Ramen',
+  'Seafood',
   'Sushi',
 ];
 
@@ -105,6 +108,7 @@ final _words = [
   'Prime',
   'Eatin\'',
 ];
+final open = ['Open', 'Closed',];
 
 final _reviewTextPerRating = {
   1: [

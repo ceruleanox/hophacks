@@ -19,10 +19,11 @@ class Filter {
   final int price;
   final String category;
   final String sort;
+  final String Open;
 
   bool get isDefault {
-    return (city == null && price == null && category == null && sort == null);
+    return (city == null && price == null && category == null && sort == null && Open == null);
   }
 
-  Filter({this.city, this.price, this.category, this.sort});
+  Filter({this.city, this.price, this.category, this.sort, this.Open});
 }
